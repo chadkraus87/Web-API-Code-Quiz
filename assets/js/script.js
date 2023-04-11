@@ -152,9 +152,12 @@ function saveScore() {
 
   var highScores = JSON.parse(localStorage.getItem("highScores") || "[]");
   highScores.push({ initials: initials, score: score });
+
   highScores.sort(function (a, b) {
     return b.score - a.score;
   });
+
   localStorage.setItem("highScores", JSON.stringify(highScores));
+
   window.location.href = "highscores.html";
 }

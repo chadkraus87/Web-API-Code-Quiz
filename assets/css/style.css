@@ -1,20 +1,20 @@
 #initials {
   display: none;
-}
-
-#initials label {
+  }
+  
+  #initials label {
   font-size: 20px;
   font-weight: bold;
   margin-right: 10px;
-}
-
-#initials input {
+  }
+  
+  #initials input {
   width: 150px;
   padding: 5px;
   margin-right: 10px;
-}
-
-#initials button {
+  }
+  
+  #initials button {
   background-color: #4CAF50;
   color: white;
   padding: 5px 10px;
@@ -23,41 +23,57 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-}
-
-#initials button:hover {
+  }
+  
+  #initials button:hover {
   background-color: #3e8e41;
-}
-
-#high-scores {
+  }
+  
+  #high-scores {
   margin-top: 20px;
-}
-
-#high-scores h2 {
+  background-color: rgb(103, 3, 209);
+  border-radius: 5px;
+  border: 1px solid #6c6c6c;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  }
+  
+  #high-scores h2 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
-}
-
-#high-scores table {
+  color: white;
+  }
+  
+  #high-scores table {
   border-collapse: collapse;
   width: 100%;
-}
-
-#high-scores th, #high-scores td {
+  }
+  
+  #high-scores th, #high-scores td {
   text-align: left;
   padding: 8px;
-}
-
-#high-scores th {
+  }
+  
+  #high-scores th {
   background-color: #4CAF50;
   color: white;
-}
-
-#high-scores tr:nth-child(even) {
+  }
+  
+  #high-scores tr:nth-child(even) {
   background-color: #f2f2f2;
-}
-
-#high-scores tr:hover {
+  }
+  
+  #high-scores tr:hover {
   background-color: #ddd;
-}
+  }
+  
+  #highscores-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  }
