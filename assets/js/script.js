@@ -1,14 +1,14 @@
-// GIVEN I am taking a code quiz
-// WHEN I click the start button
-// THEN a timer starts and I am presented with a question
-// WHEN I answer a question
-// THEN I am presented with another question
-// WHEN I answer a question incorrectly
-// THEN time is subtracted from the clock
-// WHEN all questions are answered or the timer reaches 0
-// THEN the game is over
-// WHEN the game is over
-// THEN I can save my initials and score
+// // GIVEN I am taking a code quiz
+// // WHEN I click the start button
+// // THEN a timer starts and I am presented with a question
+// // WHEN I answer a question
+// // THEN I am presented with another question
+// // WHEN I answer a question incorrectly
+// // THEN time is subtracted from the clock
+// // WHEN all questions are answered or the timer reaches 0
+// // THEN the game is over
+// // WHEN the game is over
+// // THEN I can save my initials and score
 
 // Javascript variables defined.
 var startBtn = document.querySelector("#start");
@@ -30,18 +30,31 @@ var questions = [
     answer: "Object-Oriented",
   },
   {
-    question: "Which of the following keywords is used to define a variable in JavaScript?",
+    question:
+      "Which of the following keywords is used to define a variable in JavaScript?",
     choices: ["let", "mkdir", "var", "Both A and C"],
     answer: "Both A and C",
   },
   {
-    question: "Where is the most appropriate place for the <script> opening and closing tags </script> in your HTMl document?",
-    choices: ["Above the <body> tag", "Middle", "Right before the closing <body> tag", "None of these"],
+    question:
+      "Where is the most appropriate place for the <script> opening and closing tags </script> in your HTMl document?",
+    choices: [
+      "Above the <body> tag",
+      "Middle",
+      "Right before the closing <body> tag",
+      "None of these",
+    ],
     answer: "Right before the closing <body> tag",
   },
   {
-    question: "What does the JavaScript interpreter do when it encounters an empty statement?",
-    choices: ["Gives an error", "Gives a warning", "Ignores the statement", "None of thsese"],
+    question:
+      "What does the JavaScript interpreter do when it encounters an empty statement?",
+    choices: [
+      "Gives an error",
+      "Gives a warning",
+      "Ignores the statement",
+      "None of thsese",
+    ],
     answer: "Ignores the statement",
   },
   {
@@ -51,12 +64,22 @@ var questions = [
   },
   {
     question: "What is an Array in JavaScript?",
-    choices: ["A special variable that can hold more than one value", "Arrays are not used in JavaScript", "A mathematical equation", "None of the Above"],
+    choices: [
+      "A special variable that can hold more than one value",
+      "Arrays are not used in JavaScript",
+      "A mathematical equation",
+      "None of the Above",
+    ],
     answer: "A special variable that can hold more than one value",
   },
   {
     question: "What are Strings used for in JavaScript?",
-    choices: ["Adding/Subtracting", "Storing and manipulating text", "True/False statements", "None of these"],
+    choices: [
+      "Adding/Subtracting",
+      "Storing and manipulating text",
+      "True/False statements",
+      "None of these",
+    ],
     answer: "Storing and manipulating text",
   },
   {
@@ -66,16 +89,26 @@ var questions = [
   },
   {
     question: "What does DOM stand for?",
-    choices: ["Data Open Model", "Data Object Mandate", "Document Open Mode", "Document Object Model"],
+    choices: [
+      "Data Open Model",
+      "Data Object Mandate",
+      "Document Open Mode",
+      "Document Object Model",
+    ],
     answer: "Document Object Model",
   },
   {
     question: "What does parseInt() do in JavaScript?",
-    choices: ["Parses a string argument and returns an integer of the specified radix", "Splits math equations", "Parts the Red Sea", "None of these"],
-    answer: "Parses a string argument and returns an integer of the specified radix",
+    choices: [
+      "Parses a string argument and returns an integer of the specified radix",
+      "Splits math equations",
+      "Parts the Red Sea",
+      "None of these",
+    ],
+    answer:
+      "Parses a string argument and returns an integer of the specified radix",
   },
 ];
-
 
 // When the start button is clicked.
 startBtn.addEventListener("click", startQuiz);
@@ -102,7 +135,7 @@ function displayQuestion() {
   var question = questions[currentQuestionIndex];
   questionEl.textContent = question.question;
   choicesEl.innerHTML = "";
-// Question elements.
+  // Question elements.
   for (var i = 0; i < question.choices.length; i++) {
     var choice = question.choices[i];
     var button = document.createElement("button");
@@ -139,7 +172,9 @@ function endQuiz() {
   choicesEl.innerHTML = "";
   feedbackEl.textContent = "Your final score is " + score;
   initialsEl.style.display = "block";
-  document.querySelector("#submit-initials").addEventListener("click", saveScore);
+  document
+    .querySelector("#submit-initials")
+    .addEventListener("click", saveScore);
 }
 
 function saveScore() {

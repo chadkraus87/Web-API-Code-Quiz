@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>High Scores</title>
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-</head>
-<body>
-  <main>
-    <div class="container">
-      <h1>High Scores</h1>
-      <div id="high-scores">
-        <h2>Scoreboard</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Initials</th>
-              <th>Score</th>
-            </tr>
-          </thead>
-          <tbody id="highscores-list"></tbody>
-        </table>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High Scores</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>High Scores</h1>
+        <div id="high-scores">
+          <h2>Scoreboard</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Initials</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody id="high-scores-list"></tbody>
+          </table>
+        </div>
+        <div id="initials">
+          <label for="initials-input">Enter your initials:</label>
+          <input type="text" id="initials-input" />
+          <button id="submit-initials">Submit</button>
+        </div>
       </div>
-      <div id="initials">
-        <label for="initials-input">Enter your initials:</label>
-        <input type="text" id="initials-input">
-        <button id="submit-initials">Submit</button>
-      </div>
-    </div>
-    <script src="./assets/js/script.js"></script>
-  </main>
-</body>
+      <script src="./assets/js/script.js"></script>
+    </main>
+  </body>
 </html>
