@@ -1,15 +1,3 @@
-// // GIVEN I am taking a code quiz
-// // WHEN I click the start button
-// // THEN a timer starts and I am presented with a question
-// // WHEN I answer a question
-// // THEN I am presented with another question
-// // WHEN I answer a question incorrectly
-// // THEN time is subtracted from the clock
-// // WHEN all questions are answered or the timer reaches 0
-// // THEN the game is over
-// // WHEN the game is over
-// // THEN I can save my initials and score
-
 // Javascript variables defined.
 var startBtn = document.querySelector("#start");
 var timerEl = document.querySelector("#timer");
@@ -187,12 +175,12 @@ function saveScore() {
 
   var highScores = JSON.parse(localStorage.getItem("highScores")) || [];
   highScores.push({ initials: initials, score: score });
-    console.log(highScores);
+  console.log(highScores);
   highScores.sort(function (a, b) {
     return b.score - a.score;
   });
   console.log(highScores);
   localStorage.setItem("highScores", JSON.stringify(highScores));
-document.querySelector("#initials-input").value = "";
+  document.querySelector("#initials-input").value = "";
   window.location.href = "highscores.html";
 }
