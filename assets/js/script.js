@@ -185,14 +185,14 @@ function saveScore() {
     return;
   }
 
-  var highScores = JSON.parse(localStorage.getItem("highScores") || "[]");
+  var highScores = JSON.parse(localStorage.getItem("highScores")) || [];
   highScores.push({ initials: initials, score: score });
-
+    console.log(highScores);
   highScores.sort(function (a, b) {
     return b.score - a.score;
   });
-
+  console.log(highScores);
   localStorage.setItem("highScores", JSON.stringify(highScores));
-
+document.querySelector("#initials-input").value = "";
   window.location.href = "highscores.html";
 }
