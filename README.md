@@ -9,7 +9,7 @@ This website follows formatting guidelines, displays use of the Document Object 
 
 [Deployed App](https://chadkraus87.github.io/Web-API-Code-Quiz)
 
-![Front End Landing Page](/Web-API-Code-Quiz/assets/images/homepage.png)
+![Front End Landing Page](/assets/images/homepage.png)
 
 ## Installation
 
